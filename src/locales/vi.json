@@ -1,0 +1,21 @@
+{
+    "todo": {
+        "createTodo": "Thêm mới công việc",
+        "title": "Tiêu đề",
+        "description": "Mô tả công việc",
+        "type": "Loại công việc",
+        "startDate": "Ngày bắt đầu",
+        "endDate": "Ngày kết thúc",
+        "whatToDo": "Bần cần thêm gì vào danh sách cần làm ?",
+        "dueDate": "Ngày tới hạn",
+        "pickACategory": "Loại công viêc",
+        "save": "Lưu",
+        "areYouSure": "Bạn có chắc muốn xóa công việc này không",
+        "todoList": "Danh sách công việc",
+        "personal": "Cá nhân",
+        "business": "Công việc",
+        "close":"Đóng",
+        "cancel":"Hủy",
+        "delete":"Xóa"
+    }
+}

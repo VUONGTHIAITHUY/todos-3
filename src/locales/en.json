@@ -1,0 +1,22 @@
+{
+  "todo": {
+    "createTodo": "CREATE A TODO",
+    "title": "Title",
+    "description": "Description",
+    "type": "Type",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "whatToDo":"What's on your todo list ?",
+    "dueDate":"Due date",
+    "pickACategory":"Pick a category",
+    "save":"Save",
+    "areYouSure":"Are you sure delete this task",
+    "todoList":"ToDo List",
+    "personal":"Personal",
+    "business":"Business",
+    "close":"Close",
+    "cancel":"Cancel",
+    "delete":"Delete"
+    
+  }
+}
