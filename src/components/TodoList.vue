@@ -11,10 +11,10 @@
                         {{ t("todo.createTodo") }}
                     </div>
                     <div class="block md:flex gap-4 mr-8">
-                        <div class="mb-2 md:mb-0 custom-select">
+                        <div @click="onSort" class="mb-2 md:mb-0 custom-select">
                             <v-select :items="types" density="category" label="Types" variant="outlined"></v-select>
                         </div>
-                        <div class="custom-select">
+                        <div @click="onSearch" class="custom-select">
                             <v-text-field :loading="loading" density="compact" variant="outlined" label="Search templates"
                                 append-inner-icon="mdi-magnify" single-line hide-details v-model="searchTextValue"
                                 v-on:keyup="onSearch"></v-text-field>
@@ -40,7 +40,7 @@
                                 </div>
                                 <div v-html="todo.description"></div>
                                 <div class="text-xs py-4">{{ todo.startDate }}</div>
-                               
+
                             </div>
 
                             <div class="actions my-auto flex gap-2">
@@ -192,6 +192,13 @@ export default {
             resetNewTodo();
         };
 
+        const onSearch = () => {
+            alert('Function not available')
+        };
+        const onSort = () => {
+            alert('Function not available')
+
+        }
         const saveTodo = () => {
             if (isEditMode) {
                 updateTodo();
@@ -289,6 +296,7 @@ export default {
         };
 
         const filteredTodos = computed(() => {
+
             let filtered = todos;
 
             if (filterType !== 'All') {
@@ -321,9 +329,7 @@ export default {
             });
         }, 5000);
 
-        onMounted(() => {
-
-        });
+        
         return {
             types,
             todos,
@@ -342,8 +348,11 @@ export default {
             cancelDeletion,
             confirmDeletion,
             toggleComplete,
+            onSearch,
+            onSort,
             t,
-            validate
+            validate,
+            
         };
     }
 }
